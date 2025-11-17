@@ -1,7 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
+import { useRouter } from "next/router";
 
 export default function Formulir() {
+  const router = useRouter();
+  
+  // ========================================
+  // PENGATURAN STATUS PENDAFTARAN
+  // ========================================
+  // Ubah nilai ini untuk mengaktifkan/menonaktifkan halaman
+  const PENDAFTARAN_DIBUKA = false; // true = buka, false = tutup
+  // ========================================
+
+  useEffect(() => {
+    // Redirect ke halaman tutup jika pendaftaran ditutup
+    if (!PENDAFTARAN_DIBUKA) {
+      router.replace("/tutup");
+    }
+  }, [router]);
+
+  // Jika pendaftaran ditutup, return null sementara redirect berlangsung
+  if (!PENDAFTARAN_DIBUKA) {
+    return null;
+  }
+
   const [formData, setFormData] = useState({
     namaLengkap: "",
     email: "",

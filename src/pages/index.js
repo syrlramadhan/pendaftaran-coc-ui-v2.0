@@ -42,21 +42,19 @@ export default function Home() {
                       </sup>
                     </p>
                     <div className="btn-wrapper mt-2">
-                      <Link href="/dokumentasi" passHref>
-                        <a className="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 mr-2 text-dark">
-                          <span className="btn-inner--icon">
-                            <i className="ni ni-image" />
-                          </span>
-                          <span className="btn-inner--text">Lihat Dokumentasi</span>
-                        </a>
+                      <Link href="/dokumentasi" className="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 mr-2 text-dark">
+                        <span className="btn-inner--icon">
+                          <i className="ni ni-image" />
+                        </span>
+                        <span className="btn-inner--text">Lihat Dokumentasi</span>
                       </Link>
-                      <Link href="/formulir" passHref>
-                        <a className="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 text-dark">
-                          <span className="btn-inner--icon">
-                            <i className="ni ni-single-copy-04" />
-                          </span>
-                          <span className="btn-inner--text">Daftar Sekarang</span>
-                        </a>
+                                            
+                      {/* JIKA PENDAFTARAN DIBUKA - Uncomment link ini */}
+                      <Link href="/formulir" className="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 text-dark">
+                        <span className="btn-inner--icon">
+                          <i className="ni ni-single-copy-04" />
+                        </span>
+                        <span className="btn-inner--text">Daftar Sekarang</span>
                       </Link>
                     </div>
                     <div className="mt-5">
@@ -93,161 +91,141 @@ export default function Home() {
           <div className="row">
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Landing Page">
-                    <Image
-                      src="/assets/img/coc 2024-2025/Webinar2025Promt.jpeg"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2023-2024 Event 1"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Landing Page">
+                  <Image
+                    src="/assets/img/coc 2024-2025/Webinar2025Promt.jpeg"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2023-2024 Event 1"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2024-2025/Webinar2025.jpg"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2023-2024 Seminar 1"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2024-2025/Webinar2025.jpg"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2023-2024 Seminar 1"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2024-2025/Coc3.jpg"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2023-2024 Seminar 1"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2024-2025/Coc3.jpg"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2023-2024 Seminar 1"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2024-2025/Coc2.jpg"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2023-2024 Seminar 1"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2024-2025/Coc2.jpg"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2023-2024 Seminar 1"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2024-2025/Coc1.jpg"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2023-2024 Seminar 1"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2024-2025/Coc1.jpg"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2023-2024 Seminar 1"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2023-2024/coc4.jpg"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2023-2024 Event 2"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2023-2024/coc4.jpg"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2023-2024 Event 2"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2023-2024/coc3.png"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2023-2024 Event 3"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2023-2024/coc3.png"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2023-2024 Event 3"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2023-2024/coc2.png"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2023-2024 Event 4"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2023-2024/coc2.png"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2023-2024 Event 4"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2023-2024/seminar1.png"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2024-2025 Event 1"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2023-2024/seminar1.png"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2024-2025 Event 1"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
             <div className="col-md-6 mb-5 mb-md-5">
               <div className="card card-lift--hover shadow border-0">
-                <Link href="#" passHref>
-                  <a title="Profile Page">
-                    <Image
-                      src="/assets/img/coc 2023-2024/coc1.png"
-                      width={500}
-                      height={300}
-                      className="card-img"
-                      alt="COC 2024-2025 Event 2"
-                      layout="responsive"
-                    />
-                  </a>
+                <Link href="#" title="Profile Page">
+                  <Image
+                    src="/assets/img/coc 2023-2024/coc1.png"
+                    width={500}
+                    height={300}
+                    className="card-img"
+                    alt="COC 2024-2025 Event 2"
+                    layout="responsive"
+                  />
                 </Link>
               </div>
             </div>
