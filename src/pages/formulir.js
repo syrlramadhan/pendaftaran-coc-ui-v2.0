@@ -12,18 +12,7 @@ export default function Formulir() {
   const PENDAFTARAN_DIBUKA = false; // true = buka, false = tutup
   // ========================================
 
-  useEffect(() => {
-    // Redirect ke halaman tutup jika pendaftaran ditutup
-    if (!PENDAFTARAN_DIBUKA) {
-      router.replace("/tutup");
-    }
-  }, [router]);
-
-  // Jika pendaftaran ditutup, return null sementara redirect berlangsung
-  if (!PENDAFTARAN_DIBUKA) {
-    return null;
-  }
-
+  // Hooks HARUS dipanggil di top level sebelum conditional return
   const [formData, setFormData] = useState({
     namaLengkap: "",
     email: "",
@@ -34,6 +23,18 @@ export default function Formulir() {
   });
   const [showFramework, setShowFramework] = useState(false);
   const [fileName, setFileName] = useState("Upload Bukti Transfer");
+
+  useEffect(() => {
+    // Redirect ke halaman tutup jika pendaftaran ditutup
+    if (!PENDAFTARAN_DIBUKA) {
+      router.replace("/tutup");
+    }
+  }, [router, PENDAFTARAN_DIBUKA]);
+
+  // Jika pendaftaran ditutup, return null sementara redirect berlangsung
+  if (!PENDAFTARAN_DIBUKA) {
+    return null;
+  }
 
   const endpoint = "https://pendaftaran-coc-api.up.railway.app/api/pendaftar/add";
 
